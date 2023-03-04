@@ -13,9 +13,6 @@ const deliveryAddressRoute = require("./app/deliveryAddress/router");
 const cartRoute = require("./app/cart/router");
 const orderRoute = require("./app/order/router");
 const invoiceRoute = require("./app/invoice/router");
-const detaildesainRoute = require("./app/detail-desain/router");
-const detailwebdevRoute = require("./app/detail-web dev/router");
-const detaildataanalysisRoute = require("./app/detail-data analysis/router");
 
 
 var app = express();
@@ -41,9 +38,6 @@ app.use("/api", tagRoute)
 app.use("/api", deliveryAddressRoute)
 app.use("/api", orderRoute)
 app.use("/api", invoiceRoute);
-app.use("/api", detaildesainRoute);
-app.use("/api", detailwebdevRoute);
-app.use("/api", detaildataanalysisRoute);
 
 //home
 app.use("/", function(req, res) {
